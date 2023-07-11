@@ -1,0 +1,39 @@
+
+.card{
+    width: 250px;
+    display: flex;
+    padding: 50px 36px 39px 36px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255,255,255,0.2);
+    gap: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.card:hover{
+    background: rgba(255,255,255,0.2);
+    transform: scale(108%);
+}
+
+.pic{
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover .pic{
+    transform: translateY(-40%);
+}
+
+
+.card p{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+a{
+    text-decoration: none;
+}
+
+

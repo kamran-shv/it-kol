@@ -1,0 +1,168 @@
+@import "../../fonts/Fonts.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    width: 1170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-top: 10px;
+    z-index: 2;
+
+}
+
+
+.header_wrapper{
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #00095e 0%, #0c0c1f 100%);
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+    padding-right: 150px;
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 10;
+    padding: 40px 5px;
+    font-family: var(--Barlak);
+}
+
+.menu a::after{
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 0;
+    border-radius: 5px;
+    height: 5px;
+    background: white;
+    transition: 0.3s ease-in-out;
+}
+
+
+.menu a:hover::after{
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    height: 5px;
+    background: white;
+}
+
+.menu_dropdown_wrapper{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.menu_dropdown{
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    padding: 20px 35px;
+    bottom: -140px;
+    width: max-content;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.menu_dropdown>a{
+    color: black;
+    padding: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.menu_dropdown>a:hover{
+    color: blue;
+    padding: 0;
+    transform: translateX(2px);
+}
+
+
+.menu_dropdown_wrapper:hover .menu_dropdown{
+    display: flex;
+}
+
+.menu_btn{
+    border: 3px solid white;
+    background: transparent;
+    padding: 13px 30px;
+    border-radius: 25px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 22;
+    font-family: var(--Barlak);
+}
+
+.menu_btn:hover{
+    border: 3px solid white;
+    background: transparent;
+    padding: 13px 30px;
+    border-radius: 25px;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+
+.menu_btn::before{
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 0;
+    background: white;
+    position: absolute;
+    transition: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    z-index: -1;
+}
+
+.menu_btn:hover::before{
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: white;
+    position: absolute;
+    transition: 0.4s ;
+    z-index: -1;
+}
+
+
+
+
+
+
+
