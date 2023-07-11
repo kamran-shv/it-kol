@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './Partner.module.css';
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 
 const Partner = () => {
+    const [counterOn, setCounterOn] = useState(false);
     return (<div className={styles.partner_wrapper}>
         <div className={styles.partner_container}>
             <div className={styles.partner_top}>
@@ -11,29 +14,22 @@ const Partner = () => {
                     come.</p>
             </div>
             <button className={styles.menu_btn}>Get Free Quote</button>
-            <div className={styles.partner_bottom}>
-                <div className={styles.counter_wrapper}>
-                    <div className={styles.counter}>
-                        <p className={styles.number}></p>
-                        <p>+</p>
+            <ScrollTrigger onEnter={() => setCounterOn(true)}>
+                <div className={styles.partner_bottom}>
+                    <div className={styles.counter_wrapper}>
+                        {counterOn && <CountUp end={2500} duration={2} separator={''} suffix={'+'}></CountUp>}
+                        <p>We understand the complexities of modern markets</p>
                     </div>
-                    <p>We understand the complexities of modern markets</p>
-                </div>
-                <div className={styles.counter_wrapper}>
-                    <div className={styles.counter}>
-                        <p className={styles.number}></p>
-                        <p>+</p>
+                    <div className={styles.counter_wrapper}>
+                        {counterOn && <CountUp end={350} duration={2} separator={''} suffix={'+'}></CountUp>}
+                        <p>We understand the complexities of modern markets</p>
                     </div>
-                    <p>We understand the complexities of modern markets</p>
-                </div>
-                <div className={styles.counter_wrapper}>
-                    <div className={styles.counter}>
-                        <p className={styles.number}></p>
-                        <p>+</p>
+                    <div className={styles.counter_wrapper}>
+                        {counterOn && <CountUp end={20} duration={2} separator={''} suffix={'+'}></CountUp>}
+                        <p>We understand the complexities of modern markets</p>
                     </div>
-                    <p>We understand the complexities of modern markets</p>
                 </div>
-            </div>
+            </ScrollTrigger>
         </div>
     </div>);
 };

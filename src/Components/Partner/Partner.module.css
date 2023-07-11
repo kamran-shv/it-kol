@@ -1,0 +1,124 @@
+.menu_btn{
+    border: 1px solid #FF4495;
+    background: transparent;
+    padding: 18px 30px;
+    border-radius: 25px;
+    color: #FF4495;
+    position: relative;
+    overflow: hidden;
+    z-index: 22;
+    font-family: var(--Barlak);
+    font-size: 25px;
+}
+
+.menu_btn:hover{
+    border: 1px solid #FF4495;
+    background: transparent;
+    padding: 18px 30px;
+    border-radius: 25px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+
+.menu_btn::before{
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 0;
+    background: #132E43;
+    position: absolute;
+    transition: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    z-index: -1;
+}
+
+.menu_btn:hover::before{
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: #132E43;
+    position: absolute;
+    transition: 0.4s ;
+    z-index: -1;
+}
+
+.partner_wrapper{
+    width: 100%;
+    padding: 120px 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.partner_container{
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.partner_top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.partner_top>p:nth-of-type(1){
+    color: #232F55;
+    font-size: 46px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.partner_top>p:nth-of-type(2){
+    color: #232F55;
+    font-size: 22px;
+    width: 850px;
+    text-align: center;
+}
+
+.partner_bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.counter_wrapper{
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.counter_wrapper>p{
+    color: #132E43;
+    font-size: 18px;
+    text-align: center;
+}
+
+.counter_wrapper>span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 64px;
+    font-weight: 800;
+    color: #132E43;
+}
+
+
+

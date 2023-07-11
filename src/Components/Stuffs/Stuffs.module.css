@@ -1,0 +1,34 @@
+
+
+.stuff_wrapper{
+    border-top: rgba(200,200,200,0.8) solid 1px;
+    width: 100%;
+    padding: 120px 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stuff_container{
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.stuff_container>p{
+    font-size: 46px;
+    font-weight: 800;
+    color: #232F55;
+}
+
+.stuff_items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
