@@ -1,3 +1,7 @@
 *{
   font-family: var(--Barlak);
 }
+
+.app{
+  position: relative;
+}
