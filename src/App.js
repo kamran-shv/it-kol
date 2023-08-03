@@ -9,22 +9,22 @@ import Partner from "./Components/Partner/Partner";
 import Stuffs from "./Components/Stuffs/Stuffs";
 import Media from "./Components/Media/Media";
 import Player from "./Components/Player/Player";
+import Footer from "./Components/Footer/Footer";
 
 
 function App() {
-    return (
-        <ModalProvider>
-                <Header></Header>
-                <HeadBanner></HeadBanner>
-                <SolutionsShort></SolutionsShort>
-                <Grow></Grow>
-                <Industries></Industries>
-                <Partner></Partner>
-                <Stuffs></Stuffs>
-                <Media></Media>
-                <Player></Player>
-        </ModalProvider>
-        );
+    return (<ModalProvider>
+            <Header></Header>
+            <HeadBanner></HeadBanner>
+            <SolutionsShort></SolutionsShort>
+            <Grow></Grow>
+            <Industries></Industries>
+            <Partner></Partner>
+            <Stuffs></Stuffs>
+            <Media></Media>
+            <Player></Player>
+            <Footer></Footer>
+        </ModalProvider>);
 }
 
 export default App;
