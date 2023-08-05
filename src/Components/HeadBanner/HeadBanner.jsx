@@ -1,5 +1,6 @@
 import styles from "./HeadBanner.module.css";
 import banner from "../../img/hero-img.png.png";
+import {NavLink} from "react-router-dom";
 
 
 export default function HeadBanner(){
@@ -9,7 +10,7 @@ export default function HeadBanner(){
             <div className={styles.banner_content}>
                 <p>We provide best <br/> IT solution</p>
                 <p>Naxly bring the power of data science and artificial intelligence to every business.</p>
-                <button>Our Services</button>
+                <NavLink to='/services' className={styles.link}>Our Services</NavLink>
             </div>
         </div>
     )

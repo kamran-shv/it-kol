@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import styles from './Partner.module.css';
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
+import {NavLink} from "react-router-dom";
 
 const Partner = () => {
     const [counterOn, setCounterOn] = useState(false);
@@ -13,7 +14,7 @@ const Partner = () => {
                     for automotive, financial, insurance, pharma & life sciences, and real estate with more to
                     come.</p>
             </div>
-            <button className={styles.menu_btn}>Get Free Quote</button>
+            <NavLink to='/contact' className={styles.menu_btn}>Get Free Quote</NavLink>
             <ScrollTrigger onEnter={() => setCounterOn(true)}>
                 <div className={styles.partner_bottom}>
                     <div className={styles.counter_wrapper}>

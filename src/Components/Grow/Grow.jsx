@@ -3,6 +3,7 @@ import styles from './Grow.module.css';
 import team from '../../img/about1.jpg.png';
 import not from '../../img/notification1.svg';
 import notif from '../../img/notification.svg';
+import {NavLink} from "react-router-dom";
 
 const Grow = () => {
     return (
@@ -36,7 +37,7 @@ const Grow = () => {
                             </div>
                         </div>
                     </div>
-                    <button className={styles.btn}>Learn More</button>
+                    <NavLink to='/about' className={styles.btn}>Learn More</NavLink>
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@ import stack1 from '../../img/stack1.svg';
 import stack2 from '../../img/stack2.svg';
 import stack3 from '../../img/stack3.svg';
 import stack4 from '../../img/stack4.svg';
+import {NavLink} from "react-router-dom";
 
 const Industries = (props) => {
     return (<div className={styles.industries_wrapper}>
@@ -23,7 +24,7 @@ const Industries = (props) => {
                     <IndustriesCard image={stack3} text='Retail & Ecommerce'></IndustriesCard>
                     <IndustriesCard image={stack4} text='Travel & Hospitality'></IndustriesCard>
                 </div>
-                <p className={styles.industries_bottom}>Need a Technology support? <a href="#">Get Started Now</a></p>
+                <p className={styles.industries_bottom}>Need a Technology support? <NavLink to="/contact">Get Started Now</NavLink></p>
             </div>
         </div>);
 };

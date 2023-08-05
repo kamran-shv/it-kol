@@ -5,7 +5,8 @@ import serv1 from '../../img/services1.svg'
 import serv2 from '../../img/services2.svg'
 import serv3 from '../../img/services3.svg'
 
-function SolutionsShort() {
+function SolutionsShort(props) {
+    let status = props.status;
     return (
         <div className={styles.solutions_wrapper}>
             <div className={styles.solutions_top}>
@@ -17,6 +18,13 @@ function SolutionsShort() {
                 <SolutionCard image = {serv2} title = 'Backup and recovery' desc = 'Naxly bring the power of data science and artificial intelligence to every business.'></SolutionCard>
                 <SolutionCard image = {serv3} title = 'Cyber security' desc = 'Naxly bring the power of data science and artificial intelligence to every business.'></SolutionCard>
             </div>
+            {status ?             <div className={styles.solutions_bottom}>
+                <SolutionCard image = {serv2} title = 'Backup and recovery' desc = 'Naxly bring the power of data science and artificial intelligence to every business.'></SolutionCard>
+                <SolutionCard image = {serv3} title = 'Cyber security' desc = 'Naxly bring the power of data science and artificial intelligence to every business.'></SolutionCard>
+                <SolutionCard image = {serv1} title = 'Managed IT services' desc = 'Naxly bring the power of data science and artificial intelligence to every business.'></SolutionCard>
+
+                </div>
+            : ''}
         </div>
     );
 }

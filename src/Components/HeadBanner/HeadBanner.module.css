@@ -50,7 +50,7 @@
     color: white;
 }
 
-.banner_content>button{
+.banner_content>.link{
     position: relative;
     color: white;
     font-family: var(--Barlak);
@@ -65,7 +65,7 @@
     transition: 0.3s ease-in-out;
 }
 
-.banner_content>button:hover{
+.banner_content>.link:hover{
     color: #000000;
     font-family: var(--Barlak);
     padding: 15px 30px;

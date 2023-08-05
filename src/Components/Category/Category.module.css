@@ -1,0 +1,27 @@
+.category{
+    width: 100%;
+    background: linear-gradient(to right, #00095e 0%, #0c0c1f 100%);
+    padding: 180px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.category_box{
+    width: 1170px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.category_box>p:nth-of-type(1){
+    color: white;
+    font-size: 64px;
+}
+
+.category_box>p:nth-of-type(2){
+    color: white;
+    font-size: 20px;
+}
