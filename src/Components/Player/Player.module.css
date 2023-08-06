@@ -42,3 +42,11 @@
     width: 80%;
     height: 80%;
 }
+
+
+@media only screen and (max-width: 1300px){
+    .frame{
+        width: 95%;
+        height: 60%;
+    }
+}

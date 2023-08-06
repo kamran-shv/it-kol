@@ -16,11 +16,9 @@ const Media = () => {
                     </div>
                 </button>
                 <p>Innovative IT Solution for your <br/> Business & Startup</p>
-                <a href="#">
                     <NavLink to='/contact'>
                         <button className={styles.btn}>Get Started Now</button>
                     </NavLink>
-                </a>
             </div>
         </div>);
 };

@@ -177,8 +177,13 @@
 }
 
 .ham_btn{
+    display: none;
     width: 40px;
     filter: invert(100%);
+}
+
+.ham_btn:hover{
+    cursor: pointer;
 }
 
 
@@ -187,6 +192,21 @@
     100%{
         top: 0;
     }
+}
+
+@media only screen and (max-width: 1200px){
+    .ham_btn{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+
+    .header{
+        padding: 20px 30px;
+    }
+
+
 }
 
 @media only screen and (max-width: 500px){
@@ -203,15 +223,12 @@
     }
 
     .header{
-        padding: 20px 10px;
+        padding: 20px 30px;
     }
 
     .menu_btn{
         display: none;
     }
-
-
-
 
 }
 

@@ -111,7 +111,7 @@
 
 
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 900px){
     .footer_box{
         flex-direction: column;
         gap: 80px;

@@ -135,7 +135,7 @@
     letter-spacing: 1px;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 1200px){
     .container{
         width: 100vw;
         flex-direction: column;
@@ -147,5 +147,6 @@
 
     .left>img{
         width: 100%;
+        margin-bottom: 20px;
     }
 }

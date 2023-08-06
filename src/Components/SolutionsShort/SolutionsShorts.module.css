@@ -43,7 +43,9 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 500px){
+
+
+@media only screen and (max-width: 900px){
     .solutions_bottom{
         flex-direction: column;
     }

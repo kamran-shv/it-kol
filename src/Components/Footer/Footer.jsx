@@ -8,14 +8,14 @@ const Footer = () => {
     return (<div className={styles.footer}>
             <div className={styles.footer_box}>
                 <div className={styles.footer_card}>
-                    <a href="#"><img className={styles.logo} src={logo} alt="logo"/></a>
+                    <NavLink to='/'><img className={styles.logo} src={logo} alt="logo"/></NavLink>
                     <p className={styles.sec_text} style={{lineHeight: '30px'}}>Duis aute irure dolor inasfa
                         reprehenderit in voluptate velit esse cillum</p>
                     <p className={styles.number}>10 (87) 738-3940</p>
                     <a className={styles.mail} href="mailto:contact@it-kol.com">contact@it-kol.com</a>
                 </div>
                 <div className={styles.footer_card}>
-                    <a href="#" className={styles.header}>Navigation</a>
+                    <NavLink to='/' className={styles.header}>Navigation</NavLink>
                     <NavLink to='/'  className={styles.sec_text}>Home</NavLink>
                     <NavLink to='/about'  className={styles.sec_text}>About</NavLink>
                     <NavLink to='/services'  className={styles.sec_text}>Services</NavLink>
@@ -23,24 +23,24 @@ const Footer = () => {
                     <NavLink to='/contact'  className={styles.sec_text}>Contact</NavLink>
                 </div>
                 <div className={styles.footer_card}>
-                    <a href="#" className={styles.header}>Services</a>
-                    <a href="#" className={styles.sec_text}>Drone Mapping</a>
-                    <a href="#" className={styles.sec_text}>Real State</a>
-                    <a href="#" className={styles.sec_text}>Commercial</a>
-                    <a href="#" className={styles.sec_text}>Construction</a>
+                    <NavLink to='/' className={styles.header}>Services</NavLink>
+                    <NavLink to='/' className={styles.sec_text}>Drone Mapping</NavLink>
+                    <NavLink to='/' className={styles.sec_text}>Real State</NavLink>
+                    <NavLink to='/' className={styles.sec_text}>Commercial</NavLink>
+                    <NavLink to='/' className={styles.sec_text}>Construction</NavLink>
                 </div>
                 <div className={styles.footer_card}>
-                    <a href="#" className={styles.header}>Services</a>
-                    <a href="#" className={styles.sec_text}>Drone Mapping</a>
+                    <NavLink to='/' className={styles.header}>Services</NavLink>
+                    <NavLink to='/' className={styles.sec_text}>Drone Mapping</NavLink>
                     <div className={styles.input}>
                         <input placeholder={'Email Adress'} type="text"/>
-                        <a href="#"><img src={arrow} alt="arr"/></a>
+                        <NavLink to='/'><img src={arrow} alt="arr"/></NavLink>
                     </div>
                     <div className={styles.social}>
-                        <a href="https://bit.ly/sai4ull"><i style={{color: '#232F55' }}  className="fab fa-facebook"></i></a>
-                        <a href="#"><i style={{color: '#232F55' }} className="fab fa-instagram"></i></a>
-                        <a href="#"><i style={{color: '#232F55' }}  className="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i style={{color: '#232F55' }}  className="fab fa-youtube"></i></a>
+                        <NavLink to='/'><i style={{color: '#232F55' }}  className="fab fa-facebook"></i></NavLink>
+                        <NavLink to='/'><i style={{color: '#232F55' }} className="fab fa-instagram"></i></NavLink>
+                        <NavLink to='/'><i style={{color: '#232F55' }}  className="fab fa-linkedin-in"></i></NavLink>
+                        <NavLink to='/'><i style={{color: '#232F55' }}  className="fab fa-youtube"></i></NavLink>
                     </div>
                 </div>
 

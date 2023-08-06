@@ -3,7 +3,7 @@ import logo from '../../img/logo.png.png';
 import {NavLink} from "react-router-dom";
 import {useContext, useState} from "react";
 import {MenuContext} from "../../Context/MenuContext";
-import close from '../../img/cancel.png'
+import close from '../../img/menu-button-of-three-horizontal-lines.png'
 
 export default function Header(){
 
@@ -21,7 +21,7 @@ export default function Header(){
     return(
         <div className={flag ? styles.header_wrapper_fixed:styles.header_wrapper}>
             <header className={styles.header}>
-                <a href="#"><img className={styles.logo} src={logo} alt="logo"/></a>
+                <NavLink to="/"><img className={styles.logo} src={logo} alt="logo"/></NavLink>
                 <div className={styles.menu}>
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/services">Services</NavLink>

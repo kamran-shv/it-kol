@@ -23,16 +23,27 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 40px;
 }
 
 .hamb_item{
     font-size: 30px;
     padding: 20px 45px;
-    border: 1px solid #00095e;
-    border-radius: 50px;
+    border-bottom: 3px solid #00095e;
 }
 
 .hamb_item:hover{
     background-color: #00095e;
     color: white;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 70px;
+}
+
+.close:hover{
+    cursor: pointer;
 }

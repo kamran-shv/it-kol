@@ -5,8 +5,8 @@ export const MenuContext = createContext();
 
 function MenuProvider(props){
 
-    const [hamb_menu, setHambMenu] = useState(styles.hamb_menu);
-    const [flag, setFlag] = useState(true);
+    const [hamb_menu, setHambMenu] = useState(styles.disp_none);
+    const [flag, setFlag] = useState(false);
 
     function changeFlag(){
         if (flag){

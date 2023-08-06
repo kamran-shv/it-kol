@@ -2,6 +2,7 @@ import React, {useContext, useState} from 'react';
 import styles from './HambMenu.module.css';
 import {NavLink} from "react-router-dom";
 import {MenuContext} from "../../Context/MenuContext";
+import close from '../../img/cancel.png';
 
 const HambMenu = () => {
 
@@ -12,6 +13,7 @@ const HambMenu = () => {
 
     return (
         <div className={hamb_menu}>
+            <img onClick={changeFlag} className={styles.close} src={close} alt="close"/>
             <div className={styles.hamb_menu_box}>
                 <NavLink onClick={changeFlag} className={styles.hamb_item} to='/'>Home</NavLink>
                 <NavLink onClick={changeFlag} className={styles.hamb_item} to='/services'>Services</NavLink>
