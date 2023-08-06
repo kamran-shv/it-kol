@@ -16,7 +16,7 @@ const Home = () => {
             <Grow></Grow>
             <Industries></Industries>
             <Partner></Partner>
-            <Stuffs></Stuffs>
+            <Stuffs status = {false}></Stuffs>
             <Media></Media>
             <Player></Player>
         </div>

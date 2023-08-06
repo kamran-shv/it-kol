@@ -8,7 +8,7 @@
 
 
 .footer_box{
-    width: 1170px;
+    width: var(--fullwidth);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -107,4 +107,14 @@
 
 .social>a:hover{
     transform: rotateY(180deg);
+}
+
+
+
+@media only screen and (max-width: 500px){
+    .footer_box{
+        flex-direction: column;
+        gap: 80px;
+        padding: 0 20px;
+    }
 }

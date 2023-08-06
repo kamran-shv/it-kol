@@ -1,3 +1,5 @@
 :root{
     --Barlak: 'Josefin Sans', sans-serif;;
+    --fullwidth: 1170px;
+    --minwidth: 100vw;
 }

@@ -8,7 +8,7 @@
 
 
 .header{
-    width: 1170px;
+    width: var(--fullwidth);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -176,11 +176,43 @@
     z-index: -1;
 }
 
+.ham_btn{
+    width: 40px;
+    filter: invert(100%);
+}
+
+
 
 @keyframes appear {
     100%{
         top: 0;
     }
+}
+
+@media only screen and (max-width: 500px){
+
+    .header_wrapper{
+        width: 100%;
+    }
+    .menu{
+        display: none;
+    }
+
+    .logo{
+        width: 120px;
+    }
+
+    .header{
+        padding: 20px 10px;
+    }
+
+    .menu_btn{
+        display: none;
+    }
+
+
+
+
 }
 
 

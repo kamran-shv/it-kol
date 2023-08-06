@@ -1,0 +1,38 @@
+
+
+.hamb_menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    z-index: 1002;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disp_none{
+    display: none;
+}
+
+.hamb_menu_box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hamb_item{
+    font-size: 30px;
+    padding: 20px 45px;
+    border: 1px solid #00095e;
+    border-radius: 50px;
+}
+
+.hamb_item:hover{
+    background-color: #00095e;
+    color: white;
+}

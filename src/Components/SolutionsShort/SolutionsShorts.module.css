@@ -1,7 +1,7 @@
 
 
 .solutions_wrapper{
-    max-width: 1170px;
+    max-width: var(--fullwidth);
     margin: auto;
     padding: 130px 0;
     display: flex;
@@ -41,4 +41,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+@media only screen and (max-width: 500px){
+    .solutions_bottom{
+        flex-direction: column;
+    }
 }

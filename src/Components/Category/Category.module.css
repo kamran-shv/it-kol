@@ -8,7 +8,7 @@
 }
 
 .category_box{
-    width: 1170px;
+    width: var(--fullwidth);
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;

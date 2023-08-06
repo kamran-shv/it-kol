@@ -10,7 +10,7 @@
 }
 
 .container{
-    width: 1170px;
+    width: var(--fullwidth);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -135,3 +135,17 @@
     letter-spacing: 1px;
 }
 
+@media only screen and (max-width: 500px){
+    .container{
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .floatbox{
+        display: none;
+    }
+
+    .left>img{
+        width: 100%;
+    }
+}

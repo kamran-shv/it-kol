@@ -1,11 +1,14 @@
 import styles from './Header.module.css';
 import logo from '../../img/logo.png.png';
 import {NavLink} from "react-router-dom";
-import {useState} from "react";
+import {useContext, useState} from "react";
+import {MenuContext} from "../../Context/MenuContext";
+import close from '../../img/cancel.png'
 
 export default function Header(){
 
     const [flag, setFlag] = useState(false);
+    const {changeFlag} = useContext(MenuContext);
 
     window.addEventListener('scroll', () =>{
         if (window.scrollY >= 660){
@@ -35,6 +38,7 @@ export default function Header(){
                     <NavLink to="/contact">Contact</NavLink>
                 </div>
                 <button className={styles.menu_btn}>Get Free Quote</button>
+                <img className={styles.ham_btn} onClick={changeFlag} src={close} alt="img"/>
             </header>
         </div>
     )

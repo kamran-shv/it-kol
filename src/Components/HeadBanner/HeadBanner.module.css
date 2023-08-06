@@ -1,7 +1,6 @@
 
 
 .head_banner_wrapper{
-    /*width: 100vw;*/
     height: 900px;
     background: linear-gradient(to right, #00095e 0%, #0c0c1f 100%);
     position: relative;
@@ -20,7 +19,7 @@
 
 .banner_content{
     position: relative;
-    width: 1170px;
+    width: var(--fullwidth);
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -77,6 +76,27 @@
 }
 
 
+@media only screen and (max-width: 500px){
+    .head_banner_wrapper{
+        width: var(--minwidth);
+        padding: 0 20px;
+    }
+    .head_banner_wrapper>img{
+        display: none;
+    }
 
+    .banner_content>p:nth-of-type(1){
+        font-size: 34px;
+        line-height: 36px;
+        width: 100%;
+    }
+    .banner_content>p:nth-of-type(2){
+        font-size: 22px;
+        line-height: 36px;
+        width: 100%;
+    }
+
+
+}
 
 

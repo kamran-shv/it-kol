@@ -58,7 +58,7 @@
 }
 
 .partner_container{
-    width: 1170px;
+    width: var(--fullwidth);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -120,5 +120,33 @@
     color: #132E43;
 }
 
+
+@media only screen and (max-width: 500px){
+    .partner_container{
+        padding: 0 20px;
+        width: var(--minwidth);
+    }
+
+    .partner_wrapper{
+        width: 100%;
+    }
+
+    .partner_bottom{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .partner_top{
+        width: 100%;
+    }
+
+    .partner_top>p:nth-of-type(1){
+        width: 100%;
+    }
+
+    .partner_top>p:nth-of-type(2){
+        width: 100%;
+    }
+}
 
 

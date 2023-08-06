@@ -10,7 +10,7 @@
 }
 
 .stuff_container{
-    width: 1170px;
+    width: var(--fullwidth);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -32,3 +32,14 @@
     align-items: flex-start;
 }
 
+@media only screen and (max-width: 500px){
+    .stuff_container{
+        padding: 0 20px;
+        width: var(--minwidth);
+    }
+
+    .stuff_items{
+        flex-direction: column;
+        gap: 40px;
+    }
+}

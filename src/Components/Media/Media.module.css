@@ -23,7 +23,7 @@
 }
 
 .media{
-    width: 1170px;
+    width: var(--fullwidth);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
