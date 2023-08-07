@@ -18,7 +18,7 @@ const HambMenu = () => {
                 <NavLink onClick={changeFlag} className={styles.hamb_item} to='/'>Home</NavLink>
                 <NavLink onClick={changeFlag} className={styles.hamb_item} to='/services'>Services</NavLink>
                 <NavLink onClick={changeFlag} className={styles.hamb_item} to='/about'>About</NavLink>
-                <NavLink onClick={changeFlag} className={styles.hamb_item} to='/study'>Case Study</NavLink>
+                <NavLink onClick={changeFlag} className={styles.hamb_item} to='/case_study'>Case Study</NavLink>
                 <NavLink onClick={changeFlag} className={styles.hamb_item} to='/blog'>Blog</NavLink>
                 <NavLink onClick={changeFlag} className={styles.hamb_item} to='/contact'>Contact</NavLink>
             </div>

@@ -10,6 +10,7 @@ import About from "./Pages/About";
 import Study from "./Pages/Study";
 import HambMenu from "./Components/HambMenu/HambMenu";
 import MenuProvider from "./Context/MenuContext";
+import Blog from "./Pages/Blog";
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
                         <Route path='/services' element={<Services/>}></Route>
                         <Route path='/about' element={<About/>}></Route>
                         <Route path='/case_study' element={<Study/>}></Route>
-                        <Route path='/blog' element={<Home/>}></Route>
+                        <Route path='/blog' element={<Blog/>}></Route>
                         <Route path='/contact' element={<Home/>}></Route>
                     </Routes>
                     <Footer></Footer>

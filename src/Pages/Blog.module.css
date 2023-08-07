@@ -1,0 +1,29 @@
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_wrapper {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1170px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+    align-items: center;
+    gap: 80px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+    align-items: center;
+}
