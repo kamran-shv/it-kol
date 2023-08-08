@@ -76,4 +76,53 @@
 }
 
 
+@media only screen and (max-width: 800px){
+
+    .card{
+        max-width: 500px;
+    }
+
+    .card>img{
+        width: 500px;
+    }
+
+    .float{
+        padding: 15px 20px;
+        transform: translateY(-130%);
+    }
+    .float>p{
+        font-size: 20px;
+    }
+
+    .text_bottom{
+        flex-direction: column;
+    }
+
+    .text_item:nth-of-type(2){
+        border-left: 0;
+        padding-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 510px){
+    .card{
+        max-width: 350px;
+    }
+
+    .card>img{
+        width: 350px;
+    }
+
+    .float{
+        padding: 15px 20px;
+        transform: translateY(-200%);
+    }
+    .float>p{
+        font-size: 20px;
+    }
+
+}
+
+
 

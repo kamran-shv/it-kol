@@ -22,8 +22,37 @@
 }
 
 .right{
+    position: relative;
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start ;
     align-items: center;
+    gap: 80px;
+}
+
+.right:before{
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 0;
+    width: 7px;
+    height: 100%;
+    background-color: dimgray;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+
+@media only screen and (max-width: 1200px){
+    .right{
+        display: none;
+    }
+    .main_wrapper{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
 }
