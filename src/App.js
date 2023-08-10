@@ -11,6 +11,7 @@ import Study from "./Pages/Study";
 import HambMenu from "./Components/HambMenu/HambMenu";
 import MenuProvider from "./Context/MenuContext";
 import Blog from "./Pages/Blog";
+import ContactPage from "./Pages/ContactPage";
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
                         <Route path='/about' element={<About/>}></Route>
                         <Route path='/case_study' element={<Study/>}></Route>
                         <Route path='/blog' element={<Blog/>}></Route>
-                        <Route path='/contact' element={<Home/>}></Route>
+                        <Route path='/contact' element={<ContactPage/>}></Route>
                     </Routes>
                     <Footer></Footer>
                 </ModalProvider>
